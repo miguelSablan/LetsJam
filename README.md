@@ -1,5 +1,4 @@
 # CodePathTeam
-# CodePathTeam
 Unit 8: Group Milestone 
 ===
 
