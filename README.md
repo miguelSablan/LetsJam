@@ -75,10 +75,10 @@ Optional:
 
 
 ## Wireframes
-<img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
+<img src="wireframe.png" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="https://i.imgur.com/lYHn37F.jpg" height=200>
+<img src="mockup.png" height=200>
 
 ### [BONUS] Interactive Prototype
 <img src="https://i.imgur.com/AiKfE5g.gif" width=200>
