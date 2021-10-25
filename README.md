@@ -78,7 +78,7 @@ Optional:
 <img src="wireframe.png" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="mockup.png" height=200>
+<img src="mockup.png" height=300 width=800>
 
 ### [BONUS] Interactive Prototype
-<img src="https://i.imgur.com/AiKfE5g.gif" width=200>
+<img src="" width=200>
