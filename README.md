@@ -80,5 +80,3 @@ Optional:
 ### [BONUS] Digital Wireframes & Mockups
 <img src="mockup.png" height=300 width=800>
 
-### [BONUS] Interactive Prototype
-<img src="" width=200>
