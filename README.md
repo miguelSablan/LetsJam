@@ -95,6 +95,12 @@ Optional:
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | username      | String   | The title of the Strong |
-   | profileImage  | File     | album image of the song |
+   | userName      | String   | The title of the Strong |
+   | profileImage  | File     | profile picture of the user |
 
+#### MusicPlayer
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | musicID       | String   | The title of the Strong |
+   | profileImage  | File     | profile picture of the user |
