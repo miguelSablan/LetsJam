@@ -104,3 +104,12 @@ Optional:
    | ------------- | -------- | ------------|
    | musicID       | String   | The title of the Strong |
    | profileImage  | File     | profile picture of the user |
+   
+
+#### Listening Room
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | musicID       | String   | The title of the Strong |
+
+
