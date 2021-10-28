@@ -86,7 +86,7 @@ Optional:
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | songID        | String   | unique id for the user post (default field) |
+   | songID        | String   | ID of the song    z |
    | songTitle     | String   | The title of the Strong |
    | songImage     | File     | album image of the song |
 
@@ -95,16 +95,18 @@ Optional:
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | userName      | String   | The title of the Strong |
+   | userName      | String   | The name of the user |
    | profileImage  | File     | profile picture of the user |
+   | userID        | String   | ID of the user
 
 #### MusicPlayer
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | musicID       | String   | The title of the Strong |
+   | musicID       | String   | The title of the Song |
    | playButton    | File     | profile picture of the user |
    | pauseButton   | File     | pro |
+   | albumCover    | Image    | Album cover of the song
    
    
 
@@ -112,6 +114,6 @@ Optional:
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | musicID       | String   | The title of the Strong |
-
+   | musicID       | String   | The titl |
+   | 
 
