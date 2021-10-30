@@ -86,9 +86,10 @@ Optional:
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | songID        | String   | ID of the song    z |
+   | songID        | String   | ID of the song |
    | songTitle     | String   | The title of the Strong |
    | songImage     | File     | album image of the song |
+   | songArtist    | String   | The song artist |
 
 
 #### User
@@ -97,23 +98,27 @@ Optional:
    | ------------- | -------- | ------------|
    | userName      | String   | The name of the user |
    | profileImage  | File     | profile picture of the user |
-   | userID        | String   | ID of the user
+   | userID        | String   | ID of the user |
 
 #### MusicPlayer
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | musicID       | String   | The title of the Song |
-   | playButton    | File     | profile picture of the user |
-   | pauseButton   | File     | pro |
-   | albumCover    | Image    | Album cover of the song
+   | musicID       | String   | The ID of the Song |
+   | albumCover    | Image    | Album cover of the song |
    
-   
+### Song List
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | songID        | String   | The title of the Song |
+   | songList    | Pointer -> Song[]  | List of songs |
+
 
 #### Listening Room
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | musicID       | String   | The titl |
-   | 
+   | roomID        | String   | The ID of the room |
+   | userList      | Pointer -> User | The list of users in the room
 
