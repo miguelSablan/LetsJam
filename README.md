@@ -121,4 +121,28 @@ Optional:
    | ------------- | -------- | ------------|
    | roomID        | String   | The ID of the room |
    | userList      | Pointer -> User | The list of users in the room
+### Networking
+#### List of network requests by screen
+   - Login Screen
+      - (Create/POST) Login in user
+   - Signup Screen
+      - (Create/POST) New user
+   - Lounge Screen
+      - (Read/GET) Get open rooms
+      - (Create/POST) Create a new room
+      - (Delete) Close your room
+   - Room Screen
+      - (Read/GET) Get all users in room
+      - (Read/GET) Get music playing in room/ media player
+      - (Read/GET) Get music playlist
+      - (Read/GET) Get user favorites playlist
+      - (Create/POST) Add song to music queue
+      - (Delete) Close your room
+      - (Delete) Exit room
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+      - (Update/PUT) Update user albums
+      - (Update/PUT) Update user artists
+      - (Update/PUT) Update user genre
 
