@@ -28,6 +28,11 @@
             android:name=".RegisterActivity">
 
         </activity>
+
+        <activity
+            android:name=".ChatActivity">
+
+        </activity>
     </application>
 
 </manifest>
