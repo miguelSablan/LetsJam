@@ -1,4 +1,4 @@
-package com.example.codepathproject;
+package com.example.letsjam;
 
 import org.junit.Test;
 

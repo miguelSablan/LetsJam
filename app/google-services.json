@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "969479765698",
-    "project_id": "auth-c2212",
-    "storage_bucket": "auth-c2212.appspot.com"
+    "project_number": "720265046496",
+    "project_id": "let-s-jam-63c2f",
+    "storage_bucket": "let-s-jam-63c2f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:969479765698:android:6de4dee873df65f0b7855b",
+        "mobilesdk_app_id": "1:720265046496:android:4d0fa0d32fb31ab10ba385",
         "android_client_info": {
-          "package_name": "com.example.codepathproject"
+          "package_name": "com.example.letsjam"
         }
       },
       "oauth_client": [
         {
-          "client_id": "969479765698-p6ah9v5gm7ij8icd0vlrvi62hfdgo0ki.apps.googleusercontent.com",
+          "client_id": "720265046496-8m7mlau8cls8lojr05rdb3pcmiv43cl8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAqfJi4yRU6UbCaCbTIGOv93DAJ74nAqQU"
+          "current_key": "AIzaSyCw2WvmiPkvKvvVCpEK7rh_FobjAno0TJY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "969479765698-p6ah9v5gm7ij8icd0vlrvi62hfdgo0ki.apps.googleusercontent.com",
+              "client_id": "720265046496-8m7mlau8cls8lojr05rdb3pcmiv43cl8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
