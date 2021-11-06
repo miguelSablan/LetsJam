@@ -30,18 +30,18 @@ An app that allows users to listen to music together in a room and add music to 
 
 **Required Must-have Stories**
 
-[] Users will be able to login/register.
-[] Users will be able to create a room that will allow others to join.
-[]Users will be able to connect to their spotify.
-[] A user will be able to control the room.
-[] Users will be able to add to playlist queue.
+- [X] Users will be able to login/register.
+- [ ] Users will be able to create a room that will allow others to join.
+- [ ] Users will be able to connect to their spotify.
+- [ ] A user will be able to control the room.
+- [ ] Users will be able to add to playlist queue.
 
 
 **Optional Nice-to-have Stories**
 
-* Users will be able to chat with each other in a room.
-* Users can also play Youtube videos in a room.
-* Users can like or dislike a song.
+- [ ] Users will be able to chat with each other in a room.
+- [ ] Users can also play Youtube videos in a room.
+- [ ] Users can like or dislike a song.
 
 ### 2. Screen Archetypes
 
