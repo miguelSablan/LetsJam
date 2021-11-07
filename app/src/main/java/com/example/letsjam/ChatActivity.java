@@ -6,9 +6,14 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+
 public class ChatActivity extends AppCompatActivity {
     EditText etMessage;
     Button btnSend;
+    DatabaseReference reference;
+
+    private String roomName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +23,11 @@ public class ChatActivity extends AppCompatActivity {
         etMessage = findViewById(R.id.etMessage);
         btnSend = findViewById(R.id.btnSend);
 
-        // TODO: Get room name that's stored from Firebase
-        getSupportActionBar().setTitle("Room Name");
-
-        //getSupportActionBar().setTitle(MainActivity.);
-
+        // Get room name that's stored from Firebase
+        roomName = getIntent().getExtras().get("ChatRoom").toString();
+        getSupportActionBar().setTitle(roomName);
+        //getSupportActionBar().setTitle("Room Name");
 
     }
 }
+
