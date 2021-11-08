@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         items = new ArrayList<>();
 
         // Storing/Loading items in list
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.child("ChatRooms").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Set<String> mySet = new HashSet<String>();
@@ -93,15 +93,17 @@ public class MainActivity extends AppCompatActivity {
         ChatAdapter.onClickListener onClickListener = new ChatAdapter.onClickListener() {
             @Override
             public void onItemClicked(int position) {
-                // The name of the room tapped
-                String roomName = items.get(position);
                 // create new activity
                 Intent i = new Intent(MainActivity.this, ChatActivity.class);
                 // pass room data
+                String roomName = items.get(position);
+                String userName = mAuth.getCurrentUser().getEmail();
+
                 i.putExtra("ChatRoom", roomName);
+                i.putExtra("Name", userName);
                 // display activity
                 startActivity(i);
-                Toast.makeText(getApplicationContext(), "Joining: " + roomName, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Joined \"" + roomName + "\"", Toast.LENGTH_SHORT).show();
             }
         };
 
@@ -122,8 +124,10 @@ public class MainActivity extends AppCompatActivity {
                 etItem.setText("");
 
                 HashMap<String, Object> hashMap = new HashMap<>();
-                hashMap.put(chatRoom, "ChatRoom");
-                reference.updateChildren(hashMap);
+
+                hashMap.put(chatRoom, "");
+
+                reference.child("ChatRooms").updateChildren(hashMap);
 
                 Toast.makeText(getApplicationContext(), "Room created: " + chatRoom, Toast.LENGTH_SHORT).show();
 
