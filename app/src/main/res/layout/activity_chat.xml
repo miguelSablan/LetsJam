@@ -8,6 +8,7 @@
     android:layout_gravity="center"
     tools:context=".ChatActivity">
 
+
     <EditText
         android:id="@+id/messageInput"
         android:layout_width="289dp"

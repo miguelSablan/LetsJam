@@ -23,6 +23,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     TextInputEditText etRegEmail;
     TextInputEditText etRegPassword;
+    TextInputEditText etRegFullname;
     TextView tvLoginHere;
     Button btnRegister;
 
@@ -36,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         etRegEmail = findViewById(R.id.etRegEmail);
         etRegPassword = findViewById(R.id.etRegPass);
+        etRegFullname = findViewById(R.id.etRegFullname);
         tvLoginHere = findViewById(R.id.tvLoginHere);
         btnRegister = findViewById(R.id.btnRegister);
 
@@ -53,11 +55,15 @@ public class RegisterActivity extends AppCompatActivity {
 
     private void createUser(){
         String email = etRegEmail.getText().toString();
+        String name =  etRegFullname.getText().toString();
         String password = etRegPassword.getText().toString();
 
         if (TextUtils.isEmpty(email)){
             etRegEmail.setError("Email cannot be empty");
             etRegEmail.requestFocus();
+        }else if (TextUtils.isEmpty(name)){
+            etRegFullname.setError("Name cannot be empty");
+            etRegFullname.requestFocus();
         }else if (TextUtils.isEmpty(password)){
             etRegPassword.setError("Password cannot be empty");
             etRegPassword.requestFocus();
@@ -68,6 +74,11 @@ public class RegisterActivity extends AppCompatActivity {
                     if (task.isSuccessful()){
                         String currentUserID = mAuth.getCurrentUser().getUid();
                         RootRef.child("Users").child(currentUserID).setValue(("currentUserID"));
+
+                        RootRef.child("Users").child(name).setValue(("Name"));
+
+
+
 
                         Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
