@@ -15,14 +15,14 @@ Unit 8: Group Milestone
 
 ## Overview
 ### Description
-An app that allows users to listen to music together in a room and add music to a queue playlist.
+An app that allows users to watch videos together in a room and add videos to a queue playlist.
 
 ### App Evaluation
 - **Category:** Music
-- **Mobile:** This app would only be avaliable on mobile devices.
-- **Story:** Allows user to come together and listen to music together and share new music. 
-- **Market:** Anyone who enjoys listening to music with their friends.
-- **Habit:** This app could be used as often as the user has one or more friends wanting to join together and listen to music.
+- **Mobile:** This app would only be avaiable on mobile devices.
+- **Story:** Allows user to come together and watch videos together
+- **Market:** Anyone who enjoys watching videos with their friends.
+- **Habit:** This app could be used as often as the user has one or more friends wanting to join together and watch videos.
 - **Scope:** We would allow users to create a lobby and others will be able to join. This could evolve into sharing other forms of media
 
 ## Product Spec
@@ -31,17 +31,16 @@ An app that allows users to listen to music together in a room and add music to 
 **Required Must-have Stories**
 
 - [X] Users will be able to login/register.
-- [ ] Users will be able to create a room that will allow others to join.
-- [ ] Users will be able to connect to their spotify.
+- [X] Users will be able to create a room that will allow others to join.
+- [X] Users will be able to watch YouTube Videos in room.
 - [ ] A user will be able to control the room.
-- [ ] Users will be able to add to playlist queue.
+- [X] Users will be able to add to playlist queue.
 
 
 **Optional Nice-to-have Stories**
 
 - [ ] Users will be able to chat with each other in a room.
-- [ ] Users can also play Youtube videos in a room.
-- [ ] Users can like or dislike a song.
+- [ ] Users can like or dislike a video.
 
 ### 2. Screen Archetypes
 
@@ -51,9 +50,9 @@ An app that allows users to listen to music together in a room and add music to 
 * Lobby Screen 
    * Allows users to join a room of their choice.
 * Profile Screen 
-   * Allows user to upload a photo and fill in favorite music prefernces
+   * Allows user to upload a photo
 * Room Screen
-   * Allows users to listen to music and add music to the queue
+   * Allows users to watch videos and add to queue.
 
 ### 3. Navigation
 
@@ -78,7 +77,7 @@ Optional:
 <img src="wireframe.png" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="mockup.png" height=300 width=800>
+<img src="youtubeapi2.gif" height=300 width=800>
 
 ## Schema 
 ### Models
