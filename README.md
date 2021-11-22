@@ -77,7 +77,7 @@ Optional:
 <img src="wireframe.png" width=800><br>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="youtubeapi2.gif" height=300 width=800>
+<img src="youtubeapi2.gif" height=600 width=300>
 
 ## Schema 
 ### Models
