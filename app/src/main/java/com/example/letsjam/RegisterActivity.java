@@ -19,6 +19,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
+
 public class RegisterActivity extends AppCompatActivity {
 
     TextInputEditText etRegEmail;
@@ -42,7 +44,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister = findViewById(R.id.btnRegister);
 
         mAuth = FirebaseAuth.getInstance();
-        RootRef = FirebaseDatabase.getInstance().getReference();
+        RootRef = FirebaseDatabase.getInstance().getReference().child("Users");
 
         btnRegister.setOnClickListener(view ->{
             createUser();
@@ -73,11 +75,18 @@ public class RegisterActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                         String currentUserID = mAuth.getCurrentUser().getUid();
-                        RootRef.child("Users").child(currentUserID).setValue(("currentUserID"));
 
-                        RootRef.child("Users").child(name).setValue(("Name"));
+                        HashMap<String, String> userInfo = new HashMap<>();
 
+                        userInfo.put("Name", name);
+                        userInfo.put("Email", email);
+                        userInfo.put("Password", password);
 
+                        //RootRef.child("Users").child(currentUserID).setValue(("currentUserID"));
+
+                        //RootRef.child("Users").child(name).setValue(("Name"));
+
+                        RootRef.push().setValue(userInfo);
 
 
                         Toast.makeText(RegisterActivity.this, "User registered successfully", Toast.LENGTH_SHORT).show();
