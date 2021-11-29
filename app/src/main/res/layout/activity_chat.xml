@@ -8,6 +8,37 @@
     android:layout_gravity="center"
     tools:context=".ChatActivity">
 
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/ytPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/musicPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ytPlayer" />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        android:layout_width="63dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="341dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="7dp"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicPlaylist" />
 
     <EditText
         android:id="@+id/messageInput"
@@ -34,11 +65,11 @@
     <ScrollView
         android:id="@+id/displayMessages"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="265dp"
         android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
         android:layout_marginBottom="98dp"
         android:fillViewport="true"
-        android:layout_gravity="center"
         android:orientation="vertical"
         android:scrollbars="vertical">
 
@@ -52,9 +83,9 @@
                 android:id="@+id/textMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:padding="10dp"
                 android:textSize="20dp"
-                android:padding="10dp" />
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 
